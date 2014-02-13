@@ -1,0 +1,232 @@
+body 
+{
+	background-color: #003;
+	text-align: center;
+	
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	
+	margin: 0px;
+	padding: 0px;
+	background-image: url(Images/Fond.png);
+	overflow: hidden;
+}
+canvas
+{
+	outline: 1px solid #333232;
+	width: 100%;
+	height: 100%;
+	
+	margin: 0px;
+	padding: 0px;
+}
+form
+{
+	position: absolute;
+	width: 640px;
+}
+#title
+{
+	z-index: 25;
+	position: fixed;
+	width: 512px;
+	height: 240px;
+	background-image: url(Images/Title.png);
+	top: 50%;
+	left: 50%;
+	margin-top: -240px;
+	margin-left: -256px;
+}
+#haut
+{
+	z-index: 25;
+	position: fixed;
+	width: 100%;
+	height: 96px;
+	top: 0px;
+	left: 0px;
+	background-image: url(Images/Noir3.png);
+	box-shadow: none;
+}
+#droite
+{
+	z-index: 25;
+	position: fixed;
+	width: 96px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	background-image: url(Images/Noir4.png);
+	box-shadow: none;
+}
+#bas
+{
+	z-index: 25;
+	position: fixed;
+	width: 100%;
+	height: 96px;
+	bottom: 0px;
+	left: 0px;
+	background-image: url(Images/Noir1.png);
+	box-shadow: none;
+}
+#gauche
+{
+	z-index: 25;
+	position: fixed;
+	width: 96px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-image: url(Images/Noir2.png);
+	box-shadow: none;
+}
+#game
+{
+	z-index: 75;
+	position: absolute;
+	background-color: #000;
+	border: 7px solid #888787;
+	outline: 1px solid #333232;
+	/*
+	width: 640px;
+	top: 50%;
+	left: 50%;
+	height: 480px;
+	margin-top: -247px;
+	margin-left: -327px;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;*/
+}
+#comment
+{
+	z-index: 75;
+	overflow: hidden;
+	
+	width: auto;
+	height: 32px;
+	
+	margin-top: 0px;
+	margin-bottom: 32px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#new, #load, #password
+{
+	position: fixed;
+
+	z-index: 75;
+	
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	
+	background-color: #aaa9a9;
+	border: outset 6px #888787;
+	outline: 1px solid #333232;
+	
+	width: auto;
+	height: auto;
+	padding: 3px;
+	margin: 0px;
+}
+#new
+{
+	width: 80px;
+	margin-left: -48px;
+	margin-top: 64px;
+	left: 50%;
+	top: 50%;
+}
+#password
+{
+	width: 160px;
+	margin-left: -90px;
+	margin-top: 134px;
+	left: 50%;
+	top: 50%;
+	border: ridge 6px #888787;
+}
+#load
+{
+	width: 178px;
+	margin-left: -90px;
+	margin-top: 170px;
+	left: 50%;
+	top: 50%;
+	cursor: Pointer;
+}
+#fullscreen
+{
+	position: fixed;
+	z-index: 100;
+	left: 6px;
+	bottom: 50px;
+}
+#fullscreenPic
+{
+	background-image: url(Images/PleinEcran.png);
+	position: fixed;
+	z-index: 100;
+	left: 28px;
+	bottom: 50px;
+	width: 16px;
+	height: 16px;
+}
+#music
+{
+	position: fixed;
+	z-index: 100;
+	left: 6px;
+	bottom: 28px;
+}
+#musicPic
+{
+	background-image: url(Images/Musique.png);
+	position: fixed;
+	z-index: 100;
+	left: 28px;
+	bottom: 28px;
+	width: 16px;
+	height: 16px;
+}
+#sound
+{
+	position: fixed;
+	z-index: 100;
+	left: 6px;
+	bottom: 6px;
+}
+#soundPic
+{
+	background-image: url(Images/Son.png);
+	position: fixed;
+	z-index: 100;
+	left: 28px;
+	bottom: 6px;
+	width: 16px;
+	height: 16px;
+}
+#new:hover, #load:hover, #password:hover
+{
+	color: #000;
+	
+	background-color: #cccbcb;
+	border: outset 6px #aaa9a9;
+	outline: 1px solid #f1f0f0;
+}
+#password:focus
+{
+	outline-width: 0;
+}
+#password:hover
+{
+	border: ridge 6px #aaa9a9;
+}
+a:hover
+{
+	cursor: Pointer;
+}

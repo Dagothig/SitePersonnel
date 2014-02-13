@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Dagothig's Lair</title>
+		<link rel="stylesheet" href="Style.css" type="text/css" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+	</head>
+	<body>
+		<!-- Fond interactif -->
+		<canvas id="birdie" class="unselectable"></canvas>
+		
+		<!-- Menu principal -->
+		<div id="topgauche"></div>	
+		<div id="topdroite"></div>
+		<div id="top" class="unselectable clickable">
+			<div id="topMenu">
+				<div class="pageLink left activeLink" onClick="SwitchPage(this, 'accueil')" id="lnkAccueil"></div>
+				<div class="pageLink left" onClick="SwitchPage(this, 'apropos')" id="lnkAPropos"></div>
+				<div class="birdieLink left" onClick="Visibilite(this)">Birdie</div>
+			</div>
+		</div>
+		<div id="mainContainer">
+			<div id="main">
+				<div id="accueil">
+					<div id="intro">
+						<!-- Div visuel --><div class="chaineprincipale1" style="margin-top:3px"></div><div class="chaineprincipale2" style="margin-top:3px"></div>
+						<div id="introtitle" class="titre"></div>
+						<div id="text"></div>
+						<div id="prochainesEntrees" class="unselectable clickable" onclick="chargerNouvellesEntrees(1);">Plus</div>
+					</div>
+					<div id="games">
+						<!-- Div visuel --><div class="chaineprincipale1"></div>	<div class="chaineprincipale2"></div>
+						<div id="gamestitle" class="titre"></div>
+							
+						<!-- Choix de jeux -->
+						
+						<!-- Template -->
+						<div class="choiceBack unselectable clickable" style="display:none;">
+							<!-- Div visuel --><div class="gamepic gamepic0"></div>
+							<a href="Jeux/Template/Game.html">Template</a>
+						</div>
+						<!-- Factorism -->
+						<div class="choiceBack unselectable clickable">
+							<!-- Div visuel --><div class="gamepic gamepic5"></div>
+							<div class="gameIcon icoDL"></div>
+							<a href="Jeux/Factorism/Game.html">Factorism</a>
+						</div>
+						<!-- Dungeoneerer -->
+						<div class="choiceBack unselectable clickable">
+							<!-- Div visuel --><div class="gamepic gamepic2"></div>
+							<div class="gameIcon icoWeb"></div>
+							<div class="gameIcon icoAbandon"></div>
+							<a href="Jeux/Dungeon/Game.html">Dungeoneerer</a>
+						</div>
+						<!-- The Fisherman -->
+						<div class="choiceBack unselectable clickable">
+							<!-- Div visuel --><div class="gamepic gamepic1"></div>
+							<div class="gameIcon icoWeb"></div>
+							<a href="Jeux/Ship/Game.html">The Fisherman</a>
+						</div>
+						<!-- Tiny Religion -->
+						<div class="choiceBack unselectable clickable">
+							<!-- Div visuel --><div class="gamepic gamepic3"></div>
+							<div class="gameIcon icoDL"></div>
+							<a href="Jeux/TinyReligion/Game.html">Tiny Religion</a>
+						</div>
+						<!-- Cossin Lette 2 -->
+						<div class="choiceBack unselectable clickable">
+							<!-- Div visuel --><div class="gamepic gamepic4"></div>
+							<div class="gameIcon icoDL"></div>
+							<a href="Jeux/Cossin2/Game.html">Cossin Lette 2</a>
+						</div>
+						
+						<!-- FIN Choix de jeux -->
+					</div>
+				</div>
+				<div id="apropos">
+					<div id="aproposDetails">
+						<!-- Div visuel --><div class="chaineprincipale1"></div>	<div class="chaineprincipale2"></div>
+						<div id="apropostitle" class="titre"></div>
+						JEAN
+					</div> 
+				</div>
+			</div>
+		</div>
+		<div id="languemenu">
+			<!-- Div visuel --><div class="chainecentree"></div>
+			<div class="langue unselectable clickable" id="fra" onClick="Fra(); changementLangue(this);">FR</div>
+			<div class="langue unselectable clickable" id="eng" onClick="Eng(); changementLangue(this);">EN</div>
+		</div>	
+		
+		<!-- Indicateurs support -->
+		<a class="navigateur" id="chrome" target='blank_' href='http://www.google.com/intl/fr/chrome/browser/' title='Fonctionne complètement avec Chrome v.23'>
+		<img src="Images/Logo_CH.png" />
+		</a>
+		<a class="navigateur" id="firefox" target='blank_' href='http://www.mozilla.org/fr/firefox/new/' title='Fonctionne, lentement, avec Firefox v.14'>
+		<img src="Images/Logo_FF.png" />
+		</a>
+		<a class="navigateur" id="ie" target='blank_' href='http://www.microsoft.com/france/windows/internet-explorer/home' title='Fonctionne globalement avec Internet Explorer v.9'>
+		<img src="Images/Logo_IE.png" />
+		</a>
+		<div id="moulin">
+			<a title="Chon Diquotte, cliquez à vos risques et périls" href="Jeux/Secret/Game.html"></a>
+		</div>
+		<!--
+		<div id="moulin"><a title="Chon Diquotte, cliquez à vos risques et périls" href="A/R/I/E/L/Ariel.html"></a></div>
+		-->
+		<!-- Div visuel --><div id="sol"></div>		<div id="bas"></div>
+		<!-- Div visuel --><div id="gauche"></div>	<div id="droite"></div>		
+		
+		<!-- Duck hunt -->
+		<script src="Content.js" type="text/javascript" onload="GamesInit();"></script>	
+		
+		<!-- Scripts de texte -->
+		<script src="Langues/AssignationLangue.js" type="text/javascript" onload="chargerEntrees();"></script>
+		<script src="Langues/Fra.js" type="text/javascript" onload="Fra();"></script>
+		<script src="Langues/Eng.js" type="text/javascript"></script>
+		<!-- FIN Scripts de texte -->
+	</body>
+</html>

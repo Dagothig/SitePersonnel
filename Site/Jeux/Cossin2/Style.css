@@ -1,0 +1,99 @@
+body 
+{
+	background-color: #123;
+	text-align: center;
+	
+	width: auto;
+	height: auto;
+	
+	margin: 0px;
+	padding: 0px;
+}
+a
+{
+	color: #0000ff;
+	position: static;
+}
+#game
+{
+	background-image: url(zerosuitcossin.png);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border: 6px solid #800;
+	
+	width: 640px;
+	height: 480px;
+	
+	margin-top: -246px;
+	margin-left: -326px;
+}
+#title
+{
+	visibility: visible;
+	position: absolute;
+	background-color: #35bfd9;
+	
+	font-family: impact;
+	font-size: 32px;
+	top: 32px;
+	left: 32px;
+	width: auto;
+	height: 48px;
+	color: #def;
+	text-align: left;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	border: solid 3px #0d04ab;
+}
+#description
+{
+	visibility: visible;
+	position: absolute;
+	background-color: #35bfd9;
+	
+	top: 256px;
+	left: 16px;
+	right: 336px;
+	bottom: 16px;
+	color: #fff;
+	text-align: left;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	border: solid 3px #0d04ab;
+}
+.downloadlink
+{
+	visibility: visible;
+
+	position: absolute;
+	width: 64px;
+	
+	text-align: center;
+	
+	color: #def;
+	text-decoration: none;
+	
+	padding: 4px;
+	margin: 0px;
+	
+	background-color: #159fd9;
+	border: solid 3px #0d04ab;
+	
+	bottom: -8px;
+	left: 50%;
+	margin-left: -35px;
+}
+.downloadlink:hover
+{
+	background-color: #def;
+	color: #0d04ab;
+}
+#game:hover .downloadlink
+{
+	visibility: visible;
+}

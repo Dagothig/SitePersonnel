@@ -1,0 +1,112 @@
+function MapLoad()
+{
+    MapName = "Map003";
+    Background = '#082040';
+
+    var array = new Array();
+    // BG
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0]);
+    array.push([0, 31, 31, 31, 31, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 31, 31, 31, 31, 0]);
+    array.push([0, 15, 15, 15, 31, 15, 15, 15, 15, 12, 12, 15, 15, 15, 15, 31, 15, 15, 15, 0]);
+    array.push([0, 16, 0, 16, 31, 16, 0, 0, 16, 12, 12, 16, 0, 0, 16, 31, 16, 0, 16, 0]);
+    array.push([0, 16, 0, 16, 31, 16, 0, 0, 16, 12, 12, 16, 0, 0, 16, 31, 16, 0, 16, 0]);
+    array.push([0, 15, 15, 15, 31, 15, 15, 15, 15, 12, 12, 15, 15, 15, 15, 31, 15, 15, 15, 12]);
+    array.push([0, 31, 31, 31, 31, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 31, 31, 31, 31, 0]);
+    array.push([0, 15, 15, 15, 31, 15, 15, 15, 15, 12, 12, 15, 15, 15, 15, 31, 15, 15, 15, 0]);
+    array.push([0, 16, 0, 16, 31, 16, 0, 0, 16, 12, 12, 16, 0, 0, 16, 31, 16, 0, 16, 0]);
+    array.push([0, 16, 0, 16, 31, 16, 0, 0, 16, 12, 12, 16, 0, 0, 16, 31, 16, 0, 16, 0]);
+    array.push([0, 15, 15, 15, 31, 15, 15, 15, 15, 12, 12, 15, 15, 15, 15, 31, 15, 15, 15, 0]);
+    array.push([0, 31, 31, 31, 31, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 31, 31, 31, 31, 0]);
+    array.push([0, 31, 31, 31, 31, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 31, 31, 31, 31, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    new GrilleVisuelle(sprGrille, array, 0, 0.5);
+
+    array = new Array();
+    // MG
+    array.push([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 22, 1]);
+    array.push([12, 0, 0, 22, 22, 22, 0, 0, 22, 22, 0, 0, 0, 0, 22, 22, 22, 22, 22, 12]);
+    array.push([12, 0, 0, 0, 22, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 22, 0, 22, 0, 12]);
+    array.push([12, 0, 0, 0, 22, 0, 22, 22, 22, 0, 0, 0, 22, 0, 0, 22, 0, 22, 0, 12]);
+    array.push([12, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 12]);
+    array.push([12, 2, 22, 0, 0, 0, 0, 0, 22, 17, 17, 0, 0, 0, 0, 0, 0, 0, 0, 6]);
+    array.push([12, 2, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 0, 0, 0, 0, 12]);
+    array.push([12, 2, 0, 21, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12]);
+    array.push([12, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12]);
+    array.push([12, 2, 0, 0, 0, 0, 0, 0, 17, 15, 15, 17, 0, 0, 0, 0, 0, 0, 0, 12]);
+    array.push([12, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 12]);
+    array.push([12, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 0, 11, 11, 12]);
+    array.push([12, 1, 1, 3, 5, 11, 11, 5, 11, 5, 11, 5, 11, 11, 11, 0, 11, 11, 11, 12]);
+    array.push([12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 12]);
+    new GrilleVisuelle(sprGrille, array, 1, 1);
+
+    array = new Array();
+    // FG
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    array.push([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    new GrilleVisuelle(sprGrille, array, 2, 1);
+
+    new Bloc(816, 48, 48, 0, false, false, false, true);
+    new Bloc(48, 672, 0, 0, false, false, false, true);
+    new Bloc(48, 672, 912, 0, false, false, false, true);
+    new Bloc(48, 24, 864, 0, false, false, false, true);
+    new Bloc(48, 144, 864, 480, false, false, false, true);
+    new Bloc(48, 96, 816, 528, false, false, false, true);
+    new Bloc(48, 48, 768, 576, false, false, false, true);
+    new Bloc(48, 48, 672, 576, false, false, false, true);
+    new Bloc(48, 96, 624, 528, false, false, false, true);
+    new Bloc(48, 48, 576, 576, false, false, false, true);
+    new Bloc(96, 24, 432, 240, false, false, false, true);
+    new Escalier(48, 480, 144, 144, true);
+    new Echelle(56, 264, 32, 216);
+    new Echelle(200, 48, 32, 144);
+    new Echelle(152, 48, 32, 48);
+    new Echelle(248, 48, 32, 48);
+    new Echelle(392, 48, 32, 240);
+    new Echelle(440, 48, 32, 48);
+    new Echelle(584, 144, 32, 48);
+    new Echelle(104, 240, 32, 48);
+    new Bloc(72, 24, 168, 336, false, false, false, true);
+    new Bloc(48, 48, 192, 288, false, false, false, true);
+    new Echelle(296, 144, 80, 48);
+    new Bloc(96, 24, 624, 288, false, false, false, true);
+    new Echelle(680, 48, 32, 48);
+    new Echelle(728, 48, 32, 192);
+    new Echelle(776, 48, 32, 48);
+    new Echelle(824, 48, 32, 144);
+    new Echelle(872, 0, 32, 96);
+    new Bloc(48, 24, 384, 432, false, false, false, true);
+    new Bloc(96, 48, 432, 432, false, false, false, true);
+    new Bloc(48, 24, 528, 432, false, false, false, true);
+    new Eau(48, 576, 864, 48, sprEau, sprSplash, 6, 0);
+    new Bloc(864, 48, 48, 624, false, false, false, true);
+    new Bloc(48, 48, 384, 576, false, false, false, true);
+    new Bloc(48, 48, 480, 576, false, false, false, true);
+    new Piques(528, 576, 48, 48, 1);
+    new Piques(432, 576, 48, 48, 1);
+    new Piques(336, 576, 48, 48, 1);
+    new Piques(192, 576, 48, 48, 1);
+    new Bloc(96, 48, 240, 576, false, false, false, true);
+    new Fontaine(720, 600, 48, 24);
+    new Ooze(192, 240, 2, 1);
+    new Ooze(624, 480, 2, 1);
+    new Ooze(432, 192, 2, 1);
+    new Ooze(672, 240, 2, 1);
+    new OozeGolem(384, 384, 5, 2);
+    new OozeGolem(528, 384, 5, 2);
+    new Switch(sprSwitch, 16, 16, 472, 416, new Porte (sprPorte, 48, 48, -4, 0, 864, 0, 48, 48, true));
+    new ChangeurSection(864, 0, 48, 48, 2, 4, 21, 10, true);
+    MapLoaded();
+}
+ScriptLoaded();

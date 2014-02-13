@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title>Dungeoneerer</title>
+		<link rel="stylesheet" href="../../Style.css" type="text/css" />
+		<link rel="stylesheet" href="Style.css" type="text/css" />
+		<link rel="shortcut icon" href="favicon.ico"/>
+	</head>
+	<body>
+		<script src="Load.js" type="text/javascript"></script>
+		<div id ="game">
+			<canvas id='c'></canvas>
+			<script id='gamescript' type="text/javascript"></script>
+		</div>
+		<a id ="mainlink" onClick="returnToTitle();" class="unselectable clickable">Back to title</a>
+		<input type="checkbox" id="fullscreen" checked onClick="Fullscreen = !Fullscreen; ScreenSwitch();"> <div id="fullscreenPic"></div>
+		<input type="checkbox" id="music" checked onClick="Musique = !Musique;"> <div id="musicPic"></div>
+		<input type="checkbox" id="sound" checked onClick="Son = !Son;"> <div id="soundPic"></div>
+		<script type="text/javascript">
+			setSettings();
+			document.getElementById('gamescript').src = "Game/" + getPageURL() + ".js";
+			ScreenSwitch();
+		</script>
+	</body>
+</html>

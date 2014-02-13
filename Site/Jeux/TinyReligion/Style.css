@@ -1,0 +1,129 @@
+body 
+{
+	background-color: #678;
+	text-align: center;
+	
+	width: auto;
+	height: auto;
+	
+	margin: 0px;
+	padding: 0px;
+}
+a
+{
+	color: #59f;
+}
+#game
+{
+	background-image: url(angryPic.png);
+	position: absolute;
+	left: 50%;
+	top: 8px;
+	background-color: #FFF;
+	border: 6px solid #FFF;
+	
+	width: 640px;
+	height: 480px;
+	
+	margin-left: -326px;
+}
+#maindescription
+{
+	visibility: hidden;
+	position: absolute;
+	background-color: #123;
+	background-color: rgba(1,2,3,0.75);
+	
+	top: 32px;
+	left: 32px;
+	right: 32px;
+	bottom: 192px;
+	color: #def;
+	text-align: left;
+	padding-top: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	border: solid 3px #fff;
+}
+#commandlist
+{
+	overflow:auto;
+	position: absolute;
+	width : 160px;
+	bottom: 8px;
+	top: 508px;
+	left: 50%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	
+	background-color: #123;
+	background-color: rgba(1,2,3,0.75);
+	color: #def;
+	border: solid 3px #fff;
+	margin-left: -83px;
+}
+
+#description1, #description2
+{
+	visibility: hidden;
+	position: absolute;
+	
+	background-color: #123;
+	background-color: rgba(1,2,3,0.75);
+	
+	margin: 32px;
+	margin-left: 0px;
+	margin-right: 0px;
+	bottom: 0px;
+	height: 128px;
+	width: 264px;
+	color: #def;
+	text-align: left;
+	padding-left: 4px;
+	padding-right: 4px;
+	
+	border: solid 3px #fff;
+}
+#description1
+{
+	left: 32px;
+}
+#description2
+{
+	right: 32px;
+}
+.downloadlink
+{
+	visibility: hidden;
+
+	position: absolute;
+	width: 64px;
+	
+	text-align: center;
+	
+	color: #def;
+	text-decoration: none;
+	
+	padding: 4px;
+	margin: 0px;
+	
+	background-color: #123;
+	border: solid 3px #fff;
+	
+	bottom: -8px;
+	left: 50%;
+	margin-left: -35px;
+}
+.downloadlink:hover
+{
+	background-color: #789;
+}
+#game:hover
+{
+	background-image: url(happyPic.png);
+}
+#game:hover .downloadlink, #game:hover #description1, #game:hover #description2, #game:hover #maindescription
+{
+	visibility: visible;
+}
